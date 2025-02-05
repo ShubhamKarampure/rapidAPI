@@ -91,4 +91,4 @@ def get_wikipedia_content(topic):
 
 # Run the App
 if __name__ == "__main__":
-    app.run(debug=True)
+   app.run(debug=True, host='0.0.0.0', port=os.getenv('PORT', 5000))
